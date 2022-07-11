@@ -30,8 +30,7 @@
     "helpers:create-icon": "node --experimental-json-modules --loader ts-node/esm ./devtools/helpers/createIcon/run.ts",
     "helpers:capture-page-screenshots": "node --loader  ts-node/esm ./scripts/assets/capturePageScreenshots/run.ts",
     "helpers:update-useweb-deps": "npm-check-updates -f /@useweb/*/ -u && npm i && npm run tests:ts-types",
-    "postbuild": "next-sitemap --config next-sitemap.cjs",
-    "prepare": "node --experimental-json-modules --loader ts-node/esm ./scripts/prepare/run.ts"
+    "postbuild": "next-sitemap --config next-sitemap.cjs"
   },
   "dependencies": {
     "@emotion/cache": "11.7.1",
@@ -93,7 +92,6 @@
     "eslint-config-next": "12.0.9",
     "eslint-plugin-storybook": "0.5.12",
     "fs-extra": "10.0.0",
-    "husky": "8.0.1",
     "ink": "3.2.0",
     "internal-ip": "7.0.0",
     "jsdom": "19.0.0",
